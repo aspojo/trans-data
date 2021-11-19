@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.logbug.transdata.generator.mapper.RevertBoxItems1Mapper">
+
+    <resultMap id="BaseResultMap" type="top.logbug.transdata.generator.top.logbug.transdata.RevertBoxItems1">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="storeNo" column="store_no" jdbcType="SMALLINT"/>
+            <result property="batchId" column="batch_id" jdbcType="VARCHAR"/>
+            <result property="rtNo" column="rt_no" jdbcType="VARCHAR"/>
+            <result property="rtName" column="rt_name" jdbcType="VARCHAR"/>
+            <result property="gtbsBizTypeCode" column="gtbs_biz_type_code" jdbcType="VARCHAR"/>
+            <result property="boxId" column="box_id" jdbcType="VARCHAR"/>
+            <result property="pickQty" column="pick_qty" jdbcType="DOUBLE"/>
+            <result property="corrQty" column="corr_qty" jdbcType="DOUBLE"/>
+            <result property="shelfNo" column="shelf_no" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="TINYINT"/>
+            <result property="type" column="type" jdbcType="TINYINT"/>
+            <result property="warehouseNo" column="warehouse_no" jdbcType="VARCHAR"/>
+            <result property="spec" column="spec" jdbcType="VARCHAR"/>
+            <result property="finPickTime" column="fin_pick_time" jdbcType="TIMESTAMP"/>
+            <result property="createId" column="create_id" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateId" column="update_id" jdbcType="VARCHAR"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,store_no,batch_id,
+        rt_no,rt_name,gtbs_biz_type_code,
+        box_id,pick_qty,corr_qty,
+        shelf_no,status,type,
+        warehouse_no,spec,fin_pick_time,
+        create_id,create_time,update_id,
+        update_time
+    </sql>
+</mapper>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.logbug.transdata.generator.mapper.RevertItems68rs1Mapper">
+
+    <resultMap id="BaseResultMap" type="top.logbug.transdata.generator.top.logbug.transdata.RevertItems68rs1">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="storeNo" column="store_no" jdbcType="SMALLINT"/>
+            <result property="rtNo" column="rt_no" jdbcType="INTEGER"/>
+            <result property="createId" column="create_id" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateId" column="update_id" jdbcType="VARCHAR"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,store_no,rt_no,
+        create_id,create_time,update_id,
+        update_time
+    </sql>
+</mapper>

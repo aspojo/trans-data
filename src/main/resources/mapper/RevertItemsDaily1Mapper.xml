@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.logbug.transdata.generator.mapper.RevertItemsDaily1Mapper">
+
+    <resultMap id="BaseResultMap" type="top.logbug.transdata.generator.top.logbug.transdata.RevertItemsDaily1">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="storeNo" column="store_no" jdbcType="SMALLINT"/>
+            <result property="batchId" column="batch_id" jdbcType="VARCHAR"/>
+            <result property="upperId" column="upper_id" jdbcType="VARCHAR"/>
+            <result property="demandId" column="demand_id" jdbcType="VARCHAR"/>
+            <result property="warehouseNo" column="warehouse_no" jdbcType="VARCHAR"/>
+            <result property="revertType" column="revert_type" jdbcType="SMALLINT"/>
+            <result property="sectionNo" column="section_no" jdbcType="SMALLINT"/>
+            <result property="sectionName" column="section_name" jdbcType="VARCHAR"/>
+            <result property="rtNo" column="rt_no" jdbcType="VARCHAR"/>
+            <result property="rtName" column="rt_name" jdbcType="VARCHAR"/>
+            <result property="businessType" column="business_type" jdbcType="VARCHAR"/>
+            <result property="buyPrice" column="buy_price" jdbcType="DOUBLE"/>
+            <result property="status" column="status" jdbcType="TINYINT"/>
+            <result property="isRs" column="is_rs" jdbcType="TINYINT"/>
+            <result property="isDc" column="is_dc" jdbcType="TINYINT"/>
+            <result property="dc" column="dc" jdbcType="INTEGER"/>
+            <result property="dcName" column="dc_name" jdbcType="VARCHAR"/>
+            <result property="om" column="om" jdbcType="INTEGER"/>
+            <result property="supplierNo" column="supplier_no" jdbcType="INTEGER"/>
+            <result property="supplierName" column="supplier_name" jdbcType="VARCHAR"/>
+            <result property="tranStore" column="tran_store" jdbcType="SMALLINT"/>
+            <result property="type" column="type" jdbcType="BOOLEAN"/>
+            <result property="pack" column="pack" jdbcType="VARCHAR"/>
+            <result property="spec" column="spec" jdbcType="VARCHAR"/>
+            <result property="modelId" column="model_id" jdbcType="INTEGER"/>
+            <result property="colorId" column="color_id" jdbcType="INTEGER"/>
+            <result property="sizeId" column="size_id" jdbcType="INTEGER"/>
+            <result property="expectDate" column="expect_date" jdbcType="DATE"/>
+            <result property="beginDate" column="begin_date" jdbcType="DATE"/>
+            <result property="endDate" column="end_date" jdbcType="DATE"/>
+            <result property="limitQty" column="limit_qty" jdbcType="DOUBLE"/>
+            <result property="realQty" column="real_qty" jdbcType="DOUBLE"/>
+            <result property="createId" column="create_id" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateId" column="update_id" jdbcType="VARCHAR"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="gtbsBizTypeCode" column="gtbs_biz_type_code" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,store_no,batch_id,
+        upper_id,demand_id,warehouse_no,
+        revert_type,section_no,section_name,
+        rt_no,rt_name,business_type,
+        buy_price,status,is_rs,
+        is_dc,dc,dc_name,
+        om,supplier_no,supplier_name,
+        tran_store,type,pack,
+        spec,model_id,color_id,
+        size_id,expect_date,begin_date,
+        end_date,limit_qty,real_qty,
+        create_id,create_time,update_id,
+        update_time,gtbs_biz_type_code
+    </sql>
+</mapper>
